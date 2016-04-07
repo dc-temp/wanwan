@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" 
+    android:background="#ffffffff" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:id="@+id/gamelinear"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+   
+
+<ImageView 
+    android:id="@+id/gamepic"
+   android:layout_width="65dp"
+   android:layout_height="65dp"  
+   android:layout_marginLeft="15dp"
+    />   
+<RelativeLayout 
+       android:layout_marginLeft="15dp"
+       android:layout_marginRight="15dp"
+    
+     android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  
+    >
+
+  <TextView
+      android:id="@+id/game_start"
+      android:layout_width="70dp"
+      android:layout_height="30dp"
+      android:layout_centerInParent="true"
+      android:layout_alignParentRight="true"
+      android:background="@drawable/button_start_selector" 
+      />
+<TextView
+    android:id="@+id/gameok1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="18dp"
+      android:text="开始"
+      android:textColor="@android:color/white" />
+ <LinearLayout 
+     android:id="@+id/game_ok"
+     android:layout_width="wrap_content"
+        android:layout_height="fill_parent"  
+        android:orientation="vertical"
+     >
+
+     <TextView
+         android:id="@+id/gamename"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="大户西游"
+         android:textSize="18sp" />
+     
+ <LinearLayout 
+     android:layout_marginTop="5dp"
+     android:layout_marginLeft="1dp"
+       android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+     >
+    <ImageView
+
+ android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/btn_xingxing" />
+     
+    <ImageView
+
+ android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/btn_xingxing" />
+     
+    <ImageView
+
+ android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/btn_xingxing" />
+     
+    <ImageView
+
+ android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/btn_xingxing" />
+     
+    <ImageView
+
+ android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/btn_xingxing" />
+     
+   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="人气："
+                        android:textColor="#ff7b7b7b"
+                        android:textSize="11.0sp" /> 
+                        <TextView
+                        android:id="@+id/text_hot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="多少人玩过"
+                          android:textColor="#ff7b7b7b"
+                        android:textSize="11.0sp"  />   
+ </LinearLayout>
+<RelativeLayout 
+     android:layout_width="wrap_content"
+     android:layout_height="fill_parent"
+    >
+ <TextView
+     android:singleLine="true"
+     android:ellipsize="end"
+     android:id="@+id/gameover"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:text="这是最牛逼的游戏啊"
+     
+     android:textColor="#ff7b7b7b"
+     android:textSize="11.0sp" />
+</RelativeLayout>
+ </LinearLayout> 
+    
+</RelativeLayout>
+ </LinearLayout>
+ <RelativeLayout
+   android:layout_marginLeft="5dp"
+     android:layout_marginRight="5dp"
+  android:layout_width="fill_parent"
+     android:layout_height="0.5dp"
+     android:background="#ff7b7b7b"
+     />
+</LinearLayout>

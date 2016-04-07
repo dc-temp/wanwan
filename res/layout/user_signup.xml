@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/general_backgroud"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_common_2" >
+
+        <include layout="@layout/back_bar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/signup_title"
+            android:textColor="@color/back_bar_title_name_font_color"
+            android:textSize="@dimen/back_bar_title_font_size" />
+    </FrameLayout>
+
+    <LinearLayout
+        style="@style/ContentMarginStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/EditLayoutStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_content_space"
+                android:src="@drawable/btn_registration_4" />
+
+            <EditText
+                android:id="@id/user_name"
+                style="@style/EditStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name_hint"
+                android:inputType="textEmailAddress"
+                android:maxLength="30" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/EditLayoutStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_content_space"
+                android:src="@drawable/btn_registration_3" />
+
+            <EditText
+                android:id="@id/user_nickname"
+                style="@style/EditStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="手机号码"
+                android:inputType="none"
+                android:maxLength="12" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/EditLayoutStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_content_space"
+                android:src="@drawable/btn_registration_2" />
+
+            <EditText
+                android:id="@id/password"
+                style="@style/EditStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLength="30" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/EditLayoutStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@id/password_check"
+                style="@style/EditStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_check_hint"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/EditLayoutStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/captcha_title" />
+
+            <EditText
+                android:id="@id/captcha_text"
+                style="@style/EditStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/captcha_hint" />
+
+            <ImageView
+                android:id="@id/captcha_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@id/change_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_image" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height_3"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@color/bg_blue"
+            android:gravity="center"
+            android:text="立即注册"
+            android:textColor="@color/android_white"
+            android:textSize="@dimen/font_size_3" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@id/right_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/general_backgroud" >
+
+        <LinearLayout
+            android:id="@id/layout_respond"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+<LinearLayout
+    android:id="@+id/xiamian"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_common_1_1"
+    android:orientation="horizontal" >
+
+ <ImageView 
+     android:id="@+id/mygame"
+     android:layout_weight="1"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:src="@drawable/icon_nav3"
+     />   
+ 
+ <ImageView 
+          android:layout_weight="1"
+     android:id="@+id/zhuanti"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+                android:src="@drawable/icon_nav1"
+        
+     />   
+ 
+ <ImageView 
+          android:layout_weight="1"
+     android:id="@+id/user_my"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+                        android:src="@drawable/icon123"
+        
+     />   
+ 
+</LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layout_respond"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@id/action_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/personal_center_head" />
+
+                <RelativeLayout
+                    android:id="@id/layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@id/layout_xiaoxi"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/user_center_xiaoxiLayout_height"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/background_selector2"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:src="@drawable/btn_xiaoxi" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/xiaoxi"
+                                android:textColor="@color/user_center_xiaoxiLayout_font_color"
+                                android:textSize="@dimen/user_center_xiaoxiLayout_font_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@id/layout_libao"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/user_center_xiaoxiLayout_height"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/background_selector2"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10.0dip"
+                                android:src="@drawable/btn_libao" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5.0dip"
+                                android:text="@string/libao"
+                                android:textColor="@color/user_center_xiaoxiLayout_font_color"
+                                android:textSize="@dimen/user_center_xiaoxiLayout_font_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1.0dip"
+                        android:layout_height="18.0dip"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="2.0dip"
+                        android:background="@color/line" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/layout_luobobi"
+                    style="@style/layoutStyle"
+                    android:layout_height="@dimen/user_center_luobobiLayout_height" >
+
+                    <ImageView
+                        android:id="@id/image_entry1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                />
+
+                    <TextView
+                        android:id="@id/text_luobobi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/user_center_entryimage_marginright"
+                        android:layout_toLeftOf="@id/image_entry1"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        android:textColor="@color/user_center_luobobiLayout_num_font_color"
+                        android:textSize="@dimen/user_center_luobobiLayout_num_font_size" />
+
+                    <ImageView
+                        android:id="@id/image_luobobi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/btn_jinbi" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/user_center_luobobiLayout_image_marginright"
+                        android:layout_toLeftOf="@id/text_luobobi"
+                        android:layout_toRightOf="@id/image_luobobi"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的平台金币"
+                            android:textColor="@color/user_center_luobobiLayout_title_font_color"
+                            android:textSize="@dimen/user_center_luobobiLayout_title_font_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/user_center_luobobiLayout_intro_font_color"
+                            android:textSize="@dimen/user_center_luobobiLayout_intro_font_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/layout_renwuliebiao"
+                    style="@style/layoutStyle"
+                    android:layout_height="@dimen/user_center_renwuliebiaoLayout_height" >
+
+                    <ImageView
+                        android:id="@id/image_entry2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/btn_jinru" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/user_center_entryimage_marginright"
+                        android:layout_toLeftOf="@id/image_entry2"
+                        android:gravity="center_vertical"
+                        android:text="@string/allTask"
+                        android:textColor="@color/user_center_renwuliebiaoLayout_intro_font_color"
+                        android:textSize="@dimen/user_center_renwuliebiaoLayout_intro_font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/taskList"
+                        android:textColor="@color/user_center_renwuliebiaoLayout_title_font_color"
+                        android:textSize="@dimen/user_center_renwuliebiaoLayout_title_font_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/layout_renwu1_parent"
+                    style="@style/layoutStyle"
+                    android:layout_height="@dimen/user_center_renwuLayout_height"
+                    android:layout_marginTop="1.0dip" >
+
+                    <LinearLayout
+                        android:id="@id/layout_renwu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@id/imag_renwutubiao1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/btn_user_6" />
+
+                        <TextView
+                            android:id="@id/text_renwuqingkuang1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/doTask"
+                            android:textColor="@color/user_center_renwuLayout_intro_font_color"
+                            android:textSize="@dimen/user_center_renwuLayout_intro_font_size" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@id/image_renwu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_common_task_2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/user_center_renwuLayout_image_marginright"
+                        android:layout_toLeftOf="@id/layout_renwu1"
+                        android:layout_toRightOf="@id/image_renwu1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@id/text_renwutitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gameShare"
+                            android:textColor="@color/user_center_renwuLayout_title_font_color"
+                            android:textSize="@dimen/user_center_renwuLayout_title_font_size" />
+
+                        <TextView
+                            android:id="@id/text_luobobi1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/game_share_luobobi"
+                            android:textColor="@color/user_center_renwuLayout_luobobi_font_color"
+                            android:textSize="@dimen/user_center_renwuLayout_intro_font_size" />
+
+                        <TextView
+                            android:id="@id/text_renwujieshao1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/game_share_luobobi_intro"
+                            android:textColor="@color/user_center_renwuLayout_intro_font_color"
+                            android:textSize="@dimen/user_center_renwuLayout_intro_font_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/layout_renwu2_parent"
+                    style="@style/layoutStyle"
+                    android:layout_height="@dimen/user_center_renwuLayout_height"
+                    android:layout_marginTop="1.0dip" >
+
+                    <LinearLayout
+                        android:id="@id/layout_renwu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@id/imag_renwutubiao2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/btn_user_6" />
+
+                        <TextView
+                            android:id="@id/text_renwuqingkuang2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/doTask"
+                            android:textColor="@color/user_center_renwuLayout_intro_font_color"
+                            android:textSize="@dimen/user_center_renwuLayout_intro_font_size" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@id/image_renwu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_common_task_3" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/user_center_renwuLayout_image_marginright"
+                        android:layout_toLeftOf="@id/layout_renwu2"
+                        android:layout_toRightOf="@id/image_renwu2"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@id/text_renwutitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jokeShare"
+                            android:textColor="@color/user_center_renwuLayout_title_font_color"
+                            android:textSize="@dimen/user_center_renwuLayout_title_font_size" />
+
+                        <TextView
+                            android:id="@id/text_luobobi2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/joke_share_luobobi"
+                            android:textColor="@color/user_center_renwuLayout_luobobi_font_color"
+                            android:textSize="@dimen/user_center_renwuLayout_intro_font_size" />
+
+                        <TextView
+                            android:id="@id/text_renwujieshao2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/joke_share_luobobi_intro"
+                            android:textColor="@color/user_center_renwuLayout_intro_font_color"
+                            android:textSize="@dimen/user_center_renwuLayout_intro_font_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

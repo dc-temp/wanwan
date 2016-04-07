@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/general_backgroud"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_common_2" >
+
+        <include layout="@layout/back_bar" />
+
+        <TextView
+            android:id="@id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="账号登陆"
+            android:textColor="@color/back_bar_title_name_font_color"
+            android:textSize="@dimen/back_bar_title_font_size" />
+
+        <Button
+            android:id="@id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/back_bar_image_marginright_space"
+            android:background="@color/android_transparent"
+            android:drawableLeft="@drawable/icon_common_registration_2"
+            android:text="@string/signup"
+            android:textColor="@color/android_light_blue" />
+    </FrameLayout>
+
+    <LinearLayout
+        style="@style/ContentMarginStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/EditLayoutStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_content_space"
+                android:src="@drawable/btn_registration_4" />
+
+            <EditText
+                android:id="@id/user_name"
+                style="@style/EditStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name_hint"
+                android:inputType="textEmailAddress"
+                android:maxLength="30" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/EditLayoutStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edit_content_space"
+                android:src="@drawable/btn_registration_2" />
+
+            <EditText
+                android:id="@id/password"
+                style="@style/EditStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height_3"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@color/bg_blue"
+            android:text="@string/login"
+            android:textColor="@color/android_white"
+            android:textSize="@dimen/font_size_3" />
+
+        <TextView
+            android:id="@id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/forget_password_hint"
+            android:textColor="@color/font_blue" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30.0dip"
+        android:text="@string/using_others_login"
+        android:textColor="@color/font_black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@id/btn_login_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_common_qq" />
+
+        <LinearLayout
+            android:layout_width="40.0dip"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <ImageView
+            android:id="@id/btn_login_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_common_wechat" />
+    </LinearLayout>
+
+</LinearLayout>

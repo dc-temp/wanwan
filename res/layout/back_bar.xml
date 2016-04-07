@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/back_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/action_bar_image_marginleft_space"
+        android:src="@drawable/icon_common_return_2" />
+
+</RelativeLayout>

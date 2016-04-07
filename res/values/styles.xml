@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+   <style name="layoutStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/background_selector2</item>
+        <item name="android:paddingLeft">@dimen/user_center_generallayout_paddingleft</item>
+        <item name="android:paddingRight">@dimen/user_center_generallayout_paddingright</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/user_center_generallayout_marginlef_marginright</item>
+        <item name="android:layout_marginTop">@dimen/user_center_generallayout_margintop</item>
+        <item name="android:layout_marginRight">@dimen/user_center_generallayout_marginlef_marginright</item>
+    </style>
+     <style name="EditLayoutStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/android_white</item>
+        <item name="android:paddingLeft">@dimen/edit_padding_left</item>
+        <item name="android:paddingTop">@dimen/edit_padding_top</item>
+        <item name="android:paddingRight">@dimen/edit_padding_right</item>
+        <item name="android:layout_marginBottom">@dimen/edit_vertical_space</item>
+    </style>
+       <style name="EditStyle" >
+        <item name="android:textColorHint">#ffcacbcc</item>
+        <item name="android:background">@drawable/bg_common_1</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+       <style name="ContentMarginStyle">
+        <item name="android:layout_marginLeft">@dimen/content_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/content_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/content_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/content_margin_bottom</item>
+    </style>
+</resources>
